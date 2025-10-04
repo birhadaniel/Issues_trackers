@@ -1,5 +1,6 @@
 @import "tailwindcss";
 
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -15,12 +16,12 @@
 body {
   color: rgb(var(--foreground-rgb));
 }
-/* 
+
 @layer utilities {
   .nav-link {
     @apply text-zinc-500 hover:text-zinc-800 transition-colors;
   }
-} */
+}
 
 
 

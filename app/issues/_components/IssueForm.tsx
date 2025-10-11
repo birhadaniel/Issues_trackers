@@ -11,18 +11,12 @@ import { IssueSchema } from "@/lib/validation";
 import { z } from 'zod';
 import ErrorMessage from "@/app/components/ErrorMessage";
 import { Issue } from '@prisma/client';
+import SimpleMDE from "react-simplemde-editor";
 
 
-const SimpleMDE = dynamic(
-  () => import('react-simplemde-editor'), 
-  { ssr: false }
-);
 
 type IssueFormData = z.infer<typeof IssueSchema>;
 
-interface Props {
-  issue?: Issue
-}
 
 const IssueForm = ({issue}:{ issue?: Issue }) => {
   const router = useRouter();
